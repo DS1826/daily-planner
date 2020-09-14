@@ -5,15 +5,24 @@ $(document).ready(function () {
     console.log(today);
     $("#currentDay").text(today);
 
-    // Current hour variable
-    const currentHour = moment().format("hA");
+    // Current Hour stores the integer for the current hour
+    const currentHour = parseInt(moment().format("hA"));
     console.log(currentHour);
 
-    // console.log(moment("2020-09-14").isBefore("2020-09-15"));
+    // Each function will iterate over each textarea id to compare time block integer to current hour integer
+    $("textarea").each(function () {
+        var id = parseInt($(this).attr("id"));
+        console.log("Time Block Hour = " + id);
+        console.log("Current Hour = " + currentHour);
+        
+        if (id < currentHour) {
+            $(".description").addClass("future");
+        } else if (id > currentHour) {
+            $(".description").addClass("past");
+        } else {
+            $(".description").addClass("present");
+        }
 
-    // const mPast = ("2020-09-14 09:00:00")
-
-    // Current Time is After 9AM Today - TRUE
-    console.log(m.isAfter(mPast));
+    });
 
   });
