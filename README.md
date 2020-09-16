@@ -1,4 +1,4 @@
-# Work Day Planner
+# Work Day Scheduler
 
 ## General Information
 This simple calendar application allows the user to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery and Moment.js.
@@ -23,7 +23,7 @@ I was able to complete this project thanks to my awesome GW Coding Bootcamp inst
 * [W3Schools.com](https://www.w3schools.com/js/)
 * [Moment.js](https://momentjs.com)
 * [dcode](https://www.youtube.com/channel/UCjX0FtIZBBVD3YoCcxnDC4g)
-* [scrimba] (https://scrimba.com/casts/cwpDGhG)
+* [scrimba](https://scrimba.com/casts/cwpDGhG)
 * [Stackoverflow](https://stackoverflow.com/)
 
 ## Contact
