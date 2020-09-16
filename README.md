@@ -18,7 +18,7 @@ This project was created with:
 This project can be accessed via the following link: https://ds1826.github.io/weekly-planner/
 
 ## Acknowledgments
-I was able to complete this project thanks to my awesome GW Coding Bootcamp instructor and TAs. I also found the following resources helpful:
+I was able to complete this project thanks to the support of my GW Coding Bootcamp instructor, TAs and classmates. I also found the following resources helpful:
 
 * [W3Schools.com](https://www.w3schools.com/js/)
 * [Moment.js](https://momentjs.com)
