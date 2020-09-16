@@ -4,7 +4,7 @@
 This simple calendar application allows the user to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery and Moment.js.
 
 ## Screenshot
-<img width="1126" alt="Screen Shot 2020-09-16 at 9 41 39 AM" src="https://user-images.githubusercontent.com/67653440/93388458-bd89c080-f838-11ea-8b46-d79e7ca04439.png">
+<img width="1075" alt="Screen Shot 2020-09-16 at 4 20 25 PM" src="https://user-images.githubusercontent.com/67653440/93389999-ffb40180-f83a-11ea-8bee-232f307e8c36.png">
 
 ## Technologies
 This project was created with: 
