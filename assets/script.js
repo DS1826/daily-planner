@@ -9,7 +9,8 @@ $(document).ready(function () {
     const currentHour = parseInt(moment().format("kA"));
     console.log(currentHour);
 
-    // Each function will iterate over each textarea id to compare time block integer to current hour integer
+    /* Updates time blocks to feature past, present & future
+    CSS Styles */
     $(".description").each(function () {
         var id = parseInt($(this).attr("data-type"));
         console.log("Time Block Hour = " + id);
@@ -25,7 +26,7 @@ $(document).ready(function () {
 
     });
 
-    // My time blocks object array stores time and user task entry
+    // Time block object array stores time and user task entries
     var myTimeBlocks = [
         {
             id: "9",
@@ -64,15 +65,20 @@ $(document).ready(function () {
             task: ""
         }
     ]
+    renderTasks();
 
+    // Onclick saves user task entries to Time Block object arrray
     $(".saveBtn").on("click", function () {
         console.log("Save button has been clicked");
         var inputId = $(this).siblings(".description").attr("id");
         var userTasks = $(this).siblings(".description").children(".tasks").val();
         myTimeBlocks[inputId].task = userTasks;
         console.log(myTimeBlocks);
-
+        
+        
         storeTasks();
+        renderTasks();
+
     });
 
     // Sets user tasks from myTimeBlocks object array to local storage string
@@ -80,8 +86,13 @@ $(document).ready(function () {
         localStorage.setItem("userTasks", JSON.stringify(myTimeBlocks));
     }
 
-
+    // Retrieves user tasks from local storage and renders to HTML DOM
+        function renderTasks() {
         savedTasks = JSON.parse(localStorage.getItem("userTasks"));
+
+        if (savedTasks) {
+            myTimeBlocks = savedTasks;
+        }
         console.log(savedTasks);
         $("#text-9am").text(savedTasks[0].task);
         $("#text-10am").text(savedTasks[1].task);
@@ -93,6 +104,10 @@ $(document).ready(function () {
         $("#text-16pm").text(savedTasks[7].task);
         $("#text-17pm").text(savedTasks[8].task);
 
+        storeTasks();
+        }
+
+        
     
     
 
