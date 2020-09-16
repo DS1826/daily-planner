@@ -1,18 +1,23 @@
+/* General Styles */
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  padding: 5px;
+  width: 100%;
+  height: auto;
 }
 
+/* Header */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -21,6 +26,7 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+/* Time Blocks */
 .description{
   white-space: pre-wrap;
 }
@@ -63,9 +69,19 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  padding: 20px;
+  white-space: normal;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+/* Media Query */
+ @media screen and (max-width: 768px) {
+  /* The profile picture will adjust to 50% */
+  .container {
+    width: 66%
+  } 
+} 
