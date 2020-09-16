@@ -25,6 +25,7 @@ I was able to complete this project thanks to the support of my GW Coding Bootca
 * [dcode](https://www.youtube.com/channel/UCjX0FtIZBBVD3YoCcxnDC4g)
 * [scrimba](https://scrimba.com/casts/cwpDGhG)
 * [Stackoverflow](https://stackoverflow.com/)
+* [MDN:JQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery)
 
 ## Contact
 Created by @DS1826
