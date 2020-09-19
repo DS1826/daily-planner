@@ -88,7 +88,7 @@ $(document).ready(function () {
 
     // Retrieves user tasks from local storage and renders to HTML DOM
         function renderTasks() {
-        savedTasks = JSON.parse(localStorage.getItem("userTasks"));
+        savedTasks = JSON.parse(localStorage.getItem("userTasks")) || myTimeBlocks;
 
         if (savedTasks) {
             myTimeBlocks = savedTasks;
